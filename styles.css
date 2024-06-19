@@ -1,0 +1,73 @@
+body {
+	font-family: "Lucida Console", Courier, monospace;
+	text-align: center;
+}
+
+h1 {
+	font-family: "Lucida Console", Courier, monospace;
+	font-style: oblique;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Lucida Console", Courier, monospace;
+	/* font-style: oblique; */
+	text-align: center;
+}
+
+h3 {
+	font-family: "Lucida Console", Courier, monospace;
+	font-style: oblique;
+	text-align: center;
+}
+
+hr {
+	margin-left: 50;
+	width: 80vw;
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 2.5rem;
+	/* Footer height */
+}
+
+
+#footer {
+	font-family: "Lucida Console", Courier, monospace;
+	width: 100%;
+	position: absolute;
+	height: 2.5rem;
+	/* bottom: 0; */
+	left: 0;
+}
+
+
+
+.column {
+	float: left;
+	width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1350px) {
+	.column {
+		width: 100%;
+	}
+}
+
+img {
+	max-width: 80vw;
+	max-height: 80vh;
+}
